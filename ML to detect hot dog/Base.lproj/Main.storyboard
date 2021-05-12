@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--HotDog ML Detection-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ML_to_detect_hot_dog" customModuleProvider="target" sceneMemberID="viewController">
@@ -43,7 +43,7 @@
                             <constraint firstItem="ZhN-za-apy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eCZ-Nc-6H3"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Ckm-DQ-ivS">
+                    <navigationItem key="navigationItem" title="HotDog ML Detection" id="Ckm-DQ-ivS">
                         <barButtonItem key="rightBarButtonItem" systemItem="camera" id="SEp-je-PrA">
                             <connections>
                                 <action selector="cameraPressed:" destination="BYZ-38-t0r" id="jYM-oR-fpc"/>
@@ -52,6 +52,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="ImageView" destination="0Qd-4C-q0r" id="w6D-cO-kHF"/>
+                        <outlet property="statusLable" destination="ZhN-za-apy" id="Lyr-fX-WzB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -66,6 +67,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="F1l-6U-hJ2">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.0016827470530000001" green="0.017572268089999999" blue="0.01536796799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
